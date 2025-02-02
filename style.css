@@ -1,0 +1,158 @@
+/* || RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* || VARIABLES */
+
+/* || GENERAL STYLES  */
+@font-face {
+  font-family: myFont;
+  src: url(Norse-Bold.otf);
+}
+
+/* || UTILITY CLASSES */
+
+/* || BLOCKS */
+
+body {
+  display: flex;
+}
+
+.water-mark {
+  background-image: url("trees.png");
+  background-size: cover;
+  background-position: bottom;
+  height: 729px;
+  width: 710px;
+  text-align: center;
+  position: relative;
+}
+
+.image-sidebar {
+  font-family: myFont, sans-serif;
+  width: 100%;
+  font-size: 3.5rem;
+  margin-top: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  color: white;
+  position: relative;
+  isolation: isolate;
+}
+
+.image-sidebar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgb(0, 0, 0);
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.image-sidebar img {
+  width: 15%;
+}
+
+.water-mark > div:nth-child(2) {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  color: white;
+  font-weight: 100;
+  font-size: 0.7rem;
+  flex-grow: 1;
+}
+
+.main {
+  font-family: sans-serif;
+  flex-grow: 0;
+  background-color: #f9fafb;
+  width: 65%;
+}
+
+.introduce {
+  font-size: 1.3rem;
+  padding: 70px 130px 60px 60px;
+  font-weight: 600;
+}
+
+.introduce > p:nth-child(3) {
+  margin-top: 30px;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 60px;
+  box-shadow: 0 2px 8px -2px rgb(187, 187, 187);
+  padding: 25px 50px 40px 60px;
+  background-color: #fff;
+}
+
+.info h3 {
+  width: 100%;
+}
+
+.info > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.info input {
+  width: 250px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.info label {
+  margin-top: 30px;
+  margin-bottom: 2px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+.info input:focus {
+  border: 1px solid rgb(77, 77, 158);
+  box-shadow: 0px 0px 5px rgb(77, 77, 158);
+  outline: 1px solid rgb(77, 77, 158);
+}
+
+.info input:invalid {
+  border: 1px solid rgb(158, 77, 92);
+  box-shadow: 0px 0px 5px rgb(158, 77, 92);
+  outline: 1px solid rgb(158, 77, 92);
+}
+
+.action {
+  padding-left: 60px;
+}
+
+.signup-button {
+  background-color: #596d48;
+  border: none;
+  color: white;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 30px 0;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.login-button {
+  color: #596d48;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* || ELEMENTS */
+
+/* || MODIFIERS*/
